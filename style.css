@@ -1,0 +1,267 @@
+.head{
+    height:150px ;
+    width:200px ;
+    top:3px;
+    left: 10px;
+    margin-top: 120px;
+    margin-left:600px ;
+    position: absolute;
+    background-color:deeppink ;
+    border-radius:100px 100px 0px 0px ;
+    border:1.5px solid black ;
+}
+.eye1{
+    height:20px;
+    width:20px ;
+    top:100px;
+    left:140px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: white;
+    border: 2px solid black;
+}
+.eye2{
+    height:20px;
+    width:20px ;
+    top:100px;
+    left:40px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: aliceblue;
+    border: 2px solid black;
+}
+
+.body{
+    height:200px;
+    width:198px ;
+    top:280px;
+    left:610px;
+    border-radius: 0px 0px 50px 50px;
+    position: absolute;
+    background-color: deeppink;
+    border: 1.5px solid black;
+
+}
+.rleg{
+    height:68px;
+    width:40px ;
+    top:198px;
+    left:38px;
+    border-radius: 0px 0px 50px 50px;
+    position: absolute;
+    background-color: deeppink;
+    border: 1.5px solid black;
+    z-index: -1;
+}
+.lleg{
+    height:70px;
+    width:39px ;
+    top:193px;
+    left:126px;
+    border-radius: 0px 0px 50px 50px;
+    position: absolute;
+    background-color: deeppink;
+    border: 1.5px solid black;
+    z-index: -1;
+}
+.rhand{
+    height:125px;
+    width:35px ;
+    top:290px;
+    left:565px;
+    border-radius: 50px 50px 50px 50px;
+    position: absolute;
+    background-color: 
+    deeppink;
+    border: 1.5px solid black;
+}
+.lhand{
+    height:127px;
+    width:35px ;
+    top:291px;
+    left:816px;
+    border-radius: 50px 50px 50px 50px;
+    position: absolute;
+    background-color: deeppink;
+    border: 1.5px solid black;
+}
+.eye1:hover{
+    background-color: yellow;
+
+}
+.eye2:hover{
+    background-color: yellow;
+}
+.lhand:hover{
+    background-color: dodgerblue;
+    animation: lhand 1.5s infinite;
+}
+.rhand:hover{
+    background-color: dodgerblue;
+    animation: rhand 1.5s infinite;
+}
+.lleg:hover{
+    background-color: orangered;
+    animation: lleg 1s infinite;
+}
+.rleg:hover{
+    background-color: orangered;
+    animation: rleg 1s infinite;
+}
+.body:hover{
+    background-color:blueviolet;
+    animation: body 2s infinite;
+}
+.head:hover{
+    background-color: dimgrey;
+    animation: head 1s infinite;
+}
+.top:hover{
+    background-color: black;
+    transform: rotate(69deg);
+}
+@keyframes rhand{
+    0%{
+        transform-origin: top;
+        transform: rotate(90deg);
+    }
+    25%{
+        transform-origin: top;
+        transform: ratate(-90deg);
+    }
+    50%{
+        transform-origin: top;
+        transform: rotate(0deg);
+    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    75%{
+        transform-origin:top ;
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform-origin: top;
+        transform: rotate(90deg);
+    }
+}
+@keyframes lhand{
+    0%{
+        transform-origin: top;
+        transform: rotate(90deg);
+    }
+    25%{
+        transform-origin: top;
+        transform: ratate(-90deg);
+    }
+    50%{
+        transform-origin: top;
+        transform: rotate(0deg);
+    }
+    75%{
+        transform-origin:top ;
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform-origin: top;
+        transform: rotate(90deg);
+    }
+}
+@keyframes lleg{
+    0%{
+        transform-origin: top;
+        transform: rotate(0deg);
+    }
+    25%{
+        transform-origin: top;
+        transform: ratate(-60deg);
+    }
+    50%{
+        transform-origin: top;
+        transform: rotate(0deg);
+    }
+    75%{
+        transform-origin:top ;
+        transform: rotate(-60deg);
+    }
+    100%{
+        transform-origin: top;
+        transform: rotate(0deg);
+    }
+}
+@keyframes rleg{
+    0%{
+        transform-origin: top;
+        transform: rotate(0deg);
+    }
+    25%{
+        transform-origin: top;
+        transform: ratate(-60deg);
+    }
+    50%{
+        transform-origin: top;
+        transform: rotate(0deg);
+    }
+    75%{
+        transform-origin:top ;
+        transform: rotate(60deg);
+    }
+    100%{
+        transform-origin: top;
+        transform: rotate(0deg);
+    }
+}
+@keyframes body{
+    0%{
+        transform-origin: top;
+        transform: rotate(360deg);
+    }
+    25%{
+        transform-origin: top;
+        transform: ratate(360deg);
+    }
+    50%{
+        transform-origin: top;
+        transform: rotate(0deg);
+    }
+    75%{
+        transform-origin:top ;
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform-origin: top;
+        transform: rotate(-360deg);
+    }
+}
+@keyframes head{
+    0%{
+        transform-origin: top;
+        transform: rotate(0deg);
+    }
+    25%{
+        transform-origin: top;
+        transform: ratate(18deg);
+    }
+    50%{
+        transform-origin: top;
+        transform: rotate(0deg);
+    }
+    75%{
+        transform-origin:top ;
+        transform: rotate(18deg);
+    }
+    100%{
+        transform-origin: top;
+        transform: rotate(0deg);
+    }
+}
+.lhand,.rhand{
+    animation: 2s lhand infinite;
+    animation: 2s rhand infinite ;
+}
+.lleg,.rleg{
+    animation:2s body infinite;
+}
+.head{
+    animation: 2s head infinite;
+}
+.body{
+    animation: 3s body infinite;
+}
